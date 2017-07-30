@@ -1,33 +1,31 @@
-<!--Style-->
-	<style>
-	ul {
-    	list-style-type: none;
-    	margin: 0;
-    	padding: 0;
-    	overflow: hidden;
-    	background-color: #fb958b;
-	}
+*{
+	margin: 0;
+}
 
-	li {
-	    float: left;
-	}
+html,body
+{
+	height: 100%;
+}
 
-	li a {
-	    display: block;
-	    color: white;
-	    text-align: center;
-	    padding: 14px 16px;
-	    text-decoration: none;
-	}
+h1, h2, h3, h4, h5, h6, p
+{
+	margin-bottom: 20px;
+}
 
-	li a:hover {
-	    background-color: #333;
-	}
-	</style>
+nav
+{
+	height: 50px;
+	background-color: rgba(0,0,.5);
+}
 
-	<ul>
-	 <li><a class="active" href="#home">Home</a></li>
-	 <li><a href="#news">News</a></li>
-	 <li><a href="#contact">Contact</a></li>
-	 <li><a href="#about">About</a></li>
-	</ul>
+.sect
+{
+	height: 100%;
+	background-color: aqua;
+}
+
+.subsection
+{
+	height: 50%;
+	background-color: bisque;
+}
