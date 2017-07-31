@@ -22,6 +22,7 @@ nav
 {
 	height: 100%;
 	background-color: cover;
+	background-repeat: no-repeat;
 }
 
 .subSection
@@ -32,7 +33,7 @@ nav
 
 .sectOne
 {
-	background-image: url("http://www.jsums.edu/compscience/files/2014/06/compsc.png?x24088");
+	background-image: url("https://flic.kr/p/WYrMHr");
 }
 
 .sectTwo
