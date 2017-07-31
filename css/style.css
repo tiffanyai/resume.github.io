@@ -2,7 +2,7 @@ body{
     margin: 0px;
     padding: 0px;
 }
-#box1,#box2,#box3,#box4{
+#Box1,#Box2,#Box3,#Box4{
     height: 100vh;
     width: 100%;
     text-align: center;
@@ -10,16 +10,16 @@ body{
     font-size: 60px;
     line-height: 100vh;
 }
-#box1{
+#Box1{
     background-color: aqua;
 }
-#box2{
+#Box2{
     background-color: deeppink;
 }
-#box3{
+#Box3{
     background-color: silver;
 }
-#box4{
+#Box4{
     background-color: gold;
 }
 #menu{
