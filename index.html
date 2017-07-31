@@ -1,53 +1,121 @@
-<!DOCTYPE html>
 <html>
-	<header>
-		<title>Scrolling</title>
-		<link rel = "stylesheet" href = "css/style.css"/>
-
-<nav class="navbar navbar-toggleable-md navbar-light bg-faded">
-  <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <a class="navbar-brand" href="#">Navbar</a>
-
-  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav mr-auto">
-      <li class="nav-item active">
-        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Link</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link disabled" href="#">Disabled</a>
-      </li>
-    </ul>
-    <form class="form-inline my-2 my-lg-0">
-      <input class="form-control mr-sm-2" type="text" placeholder="Search">
-      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-    </form>
-  </div>
-</nav>
-
-		<ul>
-		 <li><a class="active" href="#home">Home</a></li>
-		 <li><a href="#news">News</a></li>
-		 <li><a href="#contact">Contact</a></li>
-		 <li><a href="#about">About</a></li>
-		</ul>
-
-	<!--Header Picture-->
-		<center a class = "w3-center" data-flickr-embed="true"  href="https://www.flickr.com/photos/157299755@N05/36082020831/in/dateposted-public/" title="Header"><img src="https://farm5.staticflickr.com/4329/36082020831_706967088d_z.jpg" width="560" height="315" alt="Header"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
-	</header>
-
-	<body style="background-color:#f1dcd8">
-	<nav></nav>
-
-	<div class="sect sectOne"></div>
-	<div class="subSection"></div>
-	<div class="sect sectTwo"></div>
-	<div class="subSection"></div>
-	<div class="sect sectThree"></div>
-
-	</body>
+    <head>
+        <script src="jquery-1.10.2.min.js"></script>
+        <script>
+        
+        </script>
+        
+        <style>
+            body{
+                margin: 0px;
+                padding: 0px;
+            }
+            #box1,#box2,#box3,#box4{
+                height: 100vh;
+                width: 100%;
+                background-color: aqua;
+                text-align: center;
+                font-family: arial black;
+                font-size: 60px;
+                line-height: 100vh;
+            }
+            #box2{
+                background-color: deeppink;
+            }
+            #box3{
+                background-color: silver;
+            }
+            #box4{
+                background-color: gold;
+            }
+            #menu{
+                position: fixed;
+                top:50px;
+                width: 100%;
+            }
+            #leftmenu{
+                height: 30px;
+                width: 40%;
+                background-color: #222;
+                border-radius: 0px 20px 20px 0;
+                float: left;
+            }
+            #rightmenu{
+                height: 30px;
+                width: 40%;
+                background-color: #222;
+                border-radius: 20px 0px 0px 20px;
+                float: right;
+            }
+            #centerlogo{
+                height: 100px;
+                width: 100px;
+                border-radius: 50%;
+                background-color: #222;
+                float: left;
+                margin-top: -30px;
+                margin-left: 80px;
+                font-family: arial black;
+                font-size: 20px;
+                color:white;
+                line-height: 100px;
+                text-align: center;
+            }
+            a{
+                font-family: arial black;
+                font-size:20px;
+                color:white;
+                text-decoration: none;
+                margin-left: 120px;
+            }
+        </style>
+        <script src="jquery-1.10.2.min.js"></script>
+        <script>
+            $(document).ready(function(){
+               $("#link1").click(function(){
+                    $path=$("#box1").offset().top;
+                    $('body').animate({scrollTop:$path},1000);
+               });
+               $("#link2").click(function(){
+                    $path=$("#box2").offset().top;
+                    $('body').animate({scrollTop:$path},1000);
+               });
+               $("#link3").click(function(){
+                    $path=$("#box3").offset().top;
+                    $('body').animate({scrollTop:$path},1000);
+               });
+               $("#link4").click(function(){
+                    $path=$("#box4").offset().top;
+                    $('body').animate({scrollTop:$path},1000);
+               });
+            });
+        </script>
+    </head>
+    <body>
+        <div id="menu">
+            <div id="leftmenu">
+                <a href="#box1" id="link1">BOX 1</a>
+                <a href="#box2" id="link2">BOX 2</a>
+            </div>
+            <div id="centerlogo">
+                DAFT
+            </div>
+            <div id="rightmenu">
+                <a href="#box3" id="link3">BOX 3</a>
+                <a href="#box4" id="link4">BOX 4</a>
+            </div>
+        </div>
+        <div id="box1">
+            BLOCK 1    
+        </div>
+        <div id="box2">
+            BLOCK 2
+        </div>
+        <div id="box3">
+            BLOCK 3
+        </div>
+        <div id="box4">
+            BLOCK 4
+        </div>
+    </body>
 </html>
