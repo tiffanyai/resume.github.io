@@ -11,16 +11,16 @@ body{
     line-height: 100vh;
 }
 #Box1{
-    background-color: aqua;
+    background-color: #fb958b;
 }
 #Box2{
-    background-color: deeppink;
+    background-color: #f7a583;
 }
 #Box3{
-    background-color: silver;
+    background-color: #f7baa1;
 }
 #Box4{
-    background-color: gold;
+    background-color: #fb9fa4;
 }
 #menu{
     position: fixed;
