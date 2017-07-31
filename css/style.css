@@ -21,6 +21,7 @@ nav
 .sect
 {
 	height: 100%;
+	background-color: cover;
 }
 
 .subSection
