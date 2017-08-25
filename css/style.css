@@ -2,6 +2,11 @@ body{
     margin: 0px;
     padding: 0px;
 }
+
+img.resize{
+    max-width: 768px;
+    max-height: auto;
+}
 #Box1,#Box2,#Box3,#Box4{
     height: 100vh;
     width: 100%;
