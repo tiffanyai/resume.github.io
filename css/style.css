@@ -6,6 +6,8 @@ body{
 img.resize{
     max-width: 768px;
     max-height: auto;
+    float:left;
+    position: absolute;
 }
 #Box1,#Box2,#Box3,#Box4{
     height: 100vh;
@@ -16,7 +18,7 @@ img.resize{
     line-height: 100vh;
 }
 #Box1{
- /*   background-color: #fb958b;*/
+    background-color: #E8A4A3;
 }
 #Box2{
     background-color: #f7a583;
